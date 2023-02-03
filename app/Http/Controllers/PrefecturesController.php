@@ -8,7 +8,7 @@ use App\Models\Prefecture;
 class PrefecturesController extends Controller
 {
     public function index(Prefecture $prefecture)
-{
-    return $prefecture->get();
-}
+    {
+        return view('prefectures/index')->with(['prefectures' => $prefecture->getByLimit()]);
+    }
 }

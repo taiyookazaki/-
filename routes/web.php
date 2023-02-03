@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PrefecturesController;
+use App\Http\Controllers\Gotouti_menController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,5 +15,8 @@ use App\Http\Controllers\PrefecturesController;
 |
 */
 
+Route::get('/', function () {return view('welcome');});
+Route::get('/prefectures', [PrefecturesController::class, 'index']); 
+Route::get('/gotouti_men', [Gotouti_menController::class, 'prefecture']); 
+Route::get('/prefectures/{prefecture}', [Gotouti_menController::class ,'show']);
 
-Route::get('/prefectures', [PrefecturesController::class, 'index']);  
