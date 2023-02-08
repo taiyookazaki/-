@@ -21,5 +21,6 @@ Route::get('/gotouti_men/{gotouti_men}', [Gotouti_menController::class, 'gotouti
 Route::get('/prefectures/{prefecture}', [PrefecturesController::class ,'prefecture']);
 Route::get('/user', [UserControllre::class, 'user']);
 Route::get('/login', [UserControllre::class, 'login']); 
-
+Route::post('/like/{gotouti_menId}',[LikeController::class,'store']);
+Route::post('/unlike/{gotouti_menId}',[LikeController::class,'destroy']);
 

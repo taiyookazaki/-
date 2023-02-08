@@ -20,5 +20,9 @@
                     </p>
                 </div>
         </div>
+        <script src="/gotouti_map/like.js"></script>
+        <script src="/gotouti_map/likecancel.js"></script>
+        <button onclick="like({{$gotouti_men->id}})">いいね</button>
+        <button onclick="unlike({{$gotouti_men->id}})">いいね解除</button>
     </body>
 </html>
