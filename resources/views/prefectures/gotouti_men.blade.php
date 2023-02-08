@@ -8,18 +8,16 @@
     </head>
     <body>
         <h1 class='name'>
-            {{ $prefecture->name }}
+            {{ $gotouti_men->prefecture->name }}
         </h1>
         <div class='gotouti_mens'>
                 <div class='gotouti_men'>
-                    @foreach($gotouti_men as $gotouti_mens )
-                    <div class='prefecture'>
-                        <a href="/gotouti_men/{{ $gotouti_mens->id }}">
-                        {{$gotouti_mens->name}}
-                        </a>
-                    </div>
-                     @endforeach   
-                    
+                    <p>
+                        {{ $gotouti_men->name }}
+                    </p>
+                    <p >
+                        {{ $gotouti_men->origin }}
+                    </p>
                 </div>
         </div>
     </body>

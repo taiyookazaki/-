@@ -8,8 +8,8 @@ use App\Models\Gotouti_men;
 
 class gotouti_menController extends Controller
 {
-    public function prefecture(Prefecture $prefecture,Gotouti_men $gotouti_men)
-    {
-        return view('prefectures/prefecture')->with(['prefecture' => $prefecture,'gotouti_men'=>$gotouti_men]);
+    public function gotouti_men(Gotouti_men $gotouti_men)
+    {   
+        return view('prefectures/gotouti_men')->with(['gotouti_men'=>$gotouti_men]);
     }
 }

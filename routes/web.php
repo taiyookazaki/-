@@ -17,6 +17,9 @@ use App\Http\Controllers\Gotouti_menController;
 
 Route::get('/', function () {return view('welcome');});
 Route::get('/prefectures', [PrefecturesController::class, 'index']); 
-Route::get('/gotouti_men', [Gotouti_menController::class, 'prefecture']); 
-Route::get('/prefectures/{prefecture}', [Gotouti_menController::class ,'show']);
+Route::get('/gotouti_men/{gotouti_men}', [Gotouti_menController::class, 'gotouti_men']); 
+Route::get('/prefectures/{prefecture}', [PrefecturesController::class ,'prefecture']);
+Route::get('/user', [UserControllre::class, 'user']);
+Route::get('/login', [UserControllre::class, 'login']); 
+
 

@@ -16,18 +16,13 @@ class Gotouti_menSeeder extends Seeder
     public function run()
     {   
         DB::table('gotouti_mens')->insert([
-            'name' => ' ',
-            'origin'=>'',
-            'created_at' => date('Y-m-d H:i:s'),
-            'updated_at' => date('Y-m-d H:i:s'),
-        ]);
-        DB::table('gotouti_mens')->insert([
             'name' => ' 札幌味噌ラーメン',
             'origin'=>'最初に味噌ラーメンを生み出したのは、札幌市内の中心部にある『味の三平』さん。 
                     　 1955年に当時の店主・大宮守人氏が「ラーメンのスープを味噌味にしたら……」と思いついたのが札幌における味噌ラーメンのはじまりです。
                     　 その後、改良に改良を重ねて今にいたる',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
+            'prefecture_id'=>1
         ]);
          DB::table('gotouti_mens')->insert([
             'name' => '旭川醤油ラーメン',
@@ -38,6 +33,7 @@ class Gotouti_menSeeder extends Seeder
                         諸説ありますが歴史は70年以上あると考えられており、今では日本国内のみならず海外でも評価されている、日本を代表するご当地ラーメンの一つです。',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
+            'prefecture_id'=>1
         ]);
          DB::table('gotouti_mens')->insert([
             'name' => '函館塩ラーメン',
@@ -46,6 +42,7 @@ class Gotouti_menSeeder extends Seeder
                     函館ラーメンのスープは豚骨や鶏ガラの出汁に塩ダレを合わせた塩味で、麺は中太のストレート麺が使われています。 札幌、旭川と比べ函館ラーメンという名前が世間的に認知されたのは遅く、今からおよそ20年前に日清食品が発売したインスタントラーメンで、「函館塩ラーメン」という商品が発売されたのが要因といわれています。 札幌や旭川のラーメンはアレンジをきかせたメニューがどんどん作られていますが、函館はアレンジメニューが少なく透明な塩スープのシンプルな具材の王道を歩んでいます。',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
+            'prefecture_id'=>1
         ]);
         DB::table('gotouti_mens')->insert([
             'name' => '釧路ラーメン',
@@ -57,6 +54,7 @@ class Gotouti_menSeeder extends Seeder
             北海道は札幌、旭川、函館で三大ラーメンを形成していますが、その中に釧路ラーメンを入れて四大ラーメンにしようと地元の観光局などは尽力しているようです。',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
+            'prefecture_id'=>1
         ]);
         DB::table('gotouti_mens')->insert([
             'name' => '室蘭カレーラーメン',
@@ -68,6 +66,7 @@ class Gotouti_menSeeder extends Seeder
                         一度食べると癖になるあとを引く美味しさですので、室蘭に行かれた時は並ぶ可能性がありますが、一度味の大王を訪れてみてはいかがでしょうか。',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
+            'prefecture_id'=>1
         ]);
         DB::table('gotouti_mens')->insert([
             'name' => '八戸ラーメン ',
@@ -80,6 +79,7 @@ class Gotouti_menSeeder extends Seeder
                         ラーメン好きには非常に評価の高いラーメンとなっていますので、是非一度食べてみてはいかがでしょうか。',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
+            'prefecture_id'=>2
         ]);
         DB::table('gotouti_mens')->insert([
             'name' => '津軽ラーメン',
@@ -92,6 +92,7 @@ class Gotouti_menSeeder extends Seeder
                         津軽地方に行った際には、津軽そばと合わせて津軽ラーメンもご賞味ください。',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
+            'prefecture_id'=>2
         ]);
         DB::table('gotouti_mens')->insert([
             'name' => '釜石ラーメン ',
@@ -103,6 +104,7 @@ class Gotouti_menSeeder extends Seeder
             復興を目指す釜石市を盛り上げてくれています。 昔ながらのラーメンの雰囲気を残す釜石ラーメン、東北に行かれた時には立ち寄って食べてみてはいかがでしょうか。',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
+            'prefecture_id'=>3
         ]);DB::table('gotouti_mens')->insert([
             'name' => '大船渡さんまらーめん ',
             'origin'=>'大船渡さんまらーめんは、宮城県大船渡市のご当地グルメです。 
@@ -114,6 +116,7 @@ class Gotouti_menSeeder extends Seeder
             なかなか大船渡市を訪ねる機会はないかもしれませんが、訪れた際には水産品の他大船渡さんまラーメンも是非ご賞味ください。',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
+            'prefecture_id'=>3
         ]);DB::table('gotouti_mens')->insert([
             'name' => '十文字ラーメン ',
             'origin'=>'十文字ラーメンは、秋田県横手市十文字地域で食べられるご当地ラーメンです。 
@@ -126,6 +129,7 @@ class Gotouti_menSeeder extends Seeder
             全国で開催される東北物産展にも、この十文字ラーメンが展示されていることも多く、もし都心で十文字ラーメンを見かけた時は是非食べてみてください。',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
+            'prefecture_id'=>5
         ]);DB::table('gotouti_mens')->insert([
             'name' => '気仙沼ラーメン ',
             'origin'=>'気仙沼らあめんは、宮城県気仙沼市で食べることができるご当地ラーメンです。 他の地域のラーメンと大きく異なるところが、これこそが気仙沼らあめんというものが無い部分です。
@@ -137,6 +141,7 @@ class Gotouti_menSeeder extends Seeder
             気仙沼には美味しい魚料理屋さんが沢山あるので、そういったところも見てほしいですが、訪れたからには気仙沼らあめんも食べてみてください。',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
+            'prefecture_id'=>4
         ]);DB::table('gotouti_mens')->insert([
             'name' => 'とりもつラーメン ',
             'origin'=>'とりもつラーメンは、山形県新庄市で食べることができるご当地ラーメンです。
@@ -149,6 +154,7 @@ class Gotouti_menSeeder extends Seeder
             山形を訪れた際には是非ご賞味ください。',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
+            'prefecture_id'=>6
         ]);DB::table('gotouti_mens')->insert([
             'name' => ' 酒田ラーメン',
             'origin'=>'酒田ラーメンは、山形県酒田市で食べることができるご当地ラーメンです。 酒田ラーメンは、なんといっても自家製麺が特徴です。 
@@ -157,6 +163,7 @@ class Gotouti_menSeeder extends Seeder
             酒田市は港町のため、水産物が豊富です。 港に揚がったとびうおや煮干、鰹節や鯖節といった魚介から出汁を取るため、透き通った綺麗なスープです。 鶏ガラや豚骨ベースのラーメンが主流のため、魚介出汁に馴染みがない人は違和感があるかもしれませんが、日本らしさのある美味しいラーメンに仕上がっていますので、山形を訪れた際には足を運んでみてください。',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
+            'prefecture_id'=>6
         ]);DB::table('gotouti_mens')->insert([
             'name' => '冷やしラーメン ',
             'origin'=>'冷やしラーメンは山形県と福島県の郷土料理です。 
@@ -168,6 +175,7 @@ class Gotouti_menSeeder extends Seeder
             今では、この地域以外でも夏場に冷やしラーメンを展開するようになったので、夏場はまずは拠点周辺で探してみるのをオススメします。',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
+            'prefecture_id'=>6
         ]);DB::table('gotouti_mens')->insert([
             'name' => '米沢ラーメン',
             'origin'=>'米沢ラーメンとは、山形県米沢市で食べることができるご当地ラーメンです。
@@ -179,6 +187,7 @@ class Gotouti_menSeeder extends Seeder
             米沢市に出掛けた際には是非ご賞味ください。',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
+            'prefecture_id'=>6
         ]);DB::table('gotouti_mens')->insert([
             'name' => '白河ラーメン',
             'origin'=>'白河ラーメンとは、福島県白河市で食べることができるご当地ラーメンです。 豚骨、鶏ガラをベースにした透明な醤油スープに、少し太めの手打ち麺が特徴です。
@@ -188,6 +197,7 @@ class Gotouti_menSeeder extends Seeder
             本場の白河ラーメンを食べるには福島県に行く必要がありますが、何でも良いから白河ラーメンを食べたいという人は、東京でお店を探してみると見つかるかもしれません。',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
+            'prefecture_id'=>7
         ]);DB::table('gotouti_mens')->insert([
             'name' => '喜多方ラーメン ',
             'origin'=>'喜多方ラーメンは日本三大ラーメンの一つで、札幌の味噌、博多の豚骨、喜多方の醤油と住み分けされています。
@@ -197,6 +207,7 @@ class Gotouti_menSeeder extends Seeder
             ただし日本では最も有名なラーメンの一つですので、日本に来た時には是非一度食べてみてください。',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
+            'prefecture_id'=>7
         ]);DB::table('gotouti_mens')->insert([
             'name' => '八王子ラーメン ',
             'origin'=>'八王子ラーメンは、東京都八王子市で生まれたご当地ラーメンです。 
@@ -208,6 +219,7 @@ class Gotouti_menSeeder extends Seeder
             八王子ラーメン特有の刻み玉ねぎにすりおろし玉ねぎを加えてブレンド、味がまろやかだと好評です。',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
+            'prefecture_id'=>13
         ]);DB::table('gotouti_mens')->insert([
             'name' => '神奈川サンマーメン ',
             'origin'=>'神奈川県の名物として、ラーメン博物館でも食べられているのがサンマーメンです。 
@@ -219,11 +231,7 @@ class Gotouti_menSeeder extends Seeder
             元祖の味を堪能できるでしょう。',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
-        ]);DB::table('gotouti_mens')->insert([
-            'name' => ' ',
-            'origin'=>'',
-            'created_at' => date('Y-m-d H:i:s'),
-            'updated_at' => date('Y-m-d H:i:s'),
+            'prefecture_id'=>14
         ]);DB::table('gotouti_mens')->insert([
             'name' => ' アリランラーメン',
             'origin'=>'独自の調理方法により、玉ねぎをベースに豚肉・ニンニク・ニラ・ネギを使用したピリ辛らあめんです。
@@ -233,6 +241,7 @@ class Gotouti_menSeeder extends Seeder
             アリランラーメンを食べるなら八平の食堂がおすすめです',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
+            'prefecture_id'=>12
         ]);
         DB::table('gotouti_mens')->insert([
             'name' => '竹岡式ラーメン ',
@@ -246,6 +255,7 @@ class Gotouti_menSeeder extends Seeder
             分厚いチャーシュー、そして玉ねぎではなく長ねぎを大量に使い、風味が強く満足感の高いラーメンを提供しています。',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
+            'prefecture_id'=>12
         ]);
         DB::table('gotouti_mens')->insert([
             'name' => '勝浦式タンタンメン ',
@@ -257,6 +267,7 @@ class Gotouti_menSeeder extends Seeder
             時々無性に食べたくなる味はきっと忘れられないものになるはずです。',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
+            'prefecture_id'=>12
         ]);
         DB::table('gotouti_mens')->insert([
             'name' => ' 船橋ソースラーメン',
@@ -268,6 +279,7 @@ class Gotouti_menSeeder extends Seeder
             ハムをとんかつのように衣をつけて揚げたハムカツをトッピングすることで、スープであるソースとの相性もばっちりです。',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
+            'prefecture_id'=>12
         ]);
         DB::table('gotouti_mens')->insert([
             'name' => 'スタミナラーメン ',
@@ -279,6 +291,7 @@ class Gotouti_menSeeder extends Seeder
             「娘娘」、「漫々亭」は姉妹店が埼玉県の各地にあるので、埼玉を訪れた際は本場の味を堪能してみてはいかがですか。',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
+            'prefecture_id'=>11
         ]);DB::table('gotouti_mens')->insert([
             'name' => '水戸藩ラーメン ',
             'origin'=>'水戸黄門で有名な水戸光圀公が食したことで、日本人が歴史上初めて食べたラーメンとして名高いのが、茨城が発祥の水戸藩ラーメンです。
@@ -290,6 +303,7 @@ class Gotouti_menSeeder extends Seeder
             本場茨城で、歴史に思いは馳せながら水戸藩ラーメンをいただくのも良いかもしれません。',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
+            'prefecture_id'=>8
         ]);DB::table('gotouti_mens')->insert([
             'name' => 'スタミナラーメン ',
             'origin'=>'茨城で、もっとも歴史のあるご当地ラーメンのひとつが「スタミナラーメン」です。 
@@ -300,6 +314,7 @@ class Gotouti_menSeeder extends Seeder
             現代は二代目が受け継いでいて初心者にも入りやすく、広くその味は今も愛され続けています。',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
+            'prefecture_id'=>8
         ]);DB::table('gotouti_mens')->insert([
             'name' => ' 豆腐みそラーメン',
             'origin'=>'豆腐みそラーメンは、茨城県の北部を中心に食べることができるご当地ラーメンです。
@@ -311,6 +326,7 @@ class Gotouti_menSeeder extends Seeder
             茨城県に出掛ける際には、是非立ち寄ってみてください。 また、このお店以外でも豆腐みそラーメンを扱っているお店は多数ありますので、ラーメン屋さんを覗いてみると良いでしょう。',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
+            'prefecture_id'=>8
         ]);DB::table('gotouti_mens')->insert([
             'name' => '佐野ラーメン ',
             'origin'=>'栃木県の佐野ラーメンのルーツは、大正時代に洋食店で働いていた中国人コックが持ちこんだ技法からといわれています。
@@ -322,6 +338,7 @@ class Gotouti_menSeeder extends Seeder
             特に佐野の名水で作られたスープが売りの「おぐら屋」は、行列のできる有名店です。',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
+            'prefecture_id'=>9
         ]);
         DB::table('gotouti_mens')->insert([
             'name' => '上州藤岡ラーメン',
@@ -334,6 +351,7 @@ class Gotouti_menSeeder extends Seeder
             オススメは、群馬藤岡駅から徒歩10分の距離にあるみやご食堂です。 青竹で打つ麺は、コシが強くてさっぱりとした美味しさです。',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
+            'prefecture_id'=>10
         ]);
         DB::table('gotouti_mens')->insert([
             'name' => 'ほうとう風ラーメン ',
@@ -345,6 +363,7 @@ class Gotouti_menSeeder extends Seeder
             白髪ネギ、糸唐辛子、三つ葉、炙りチャーシュー、肉団子、メンマと色彩豊かなトッピングとなっています。',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
+            'prefecture_id'=>19
         ]);
         DB::table('gotouti_mens')->insert([
             'name' => '安養寺ラーメン ',
@@ -356,12 +375,14 @@ class Gotouti_menSeeder extends Seeder
             和風出汁がホッとする味わいです。',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
+            'prefecture_id'=>20
         ]);
         DB::table('gotouti_mens')->insert([
             'name' => 'ローメン ',
             'origin'=>'ローメンは、蒸した太めの中華麺に羊などの肉と炒めた野菜を加えた、長野県伊那地方のラーメンです。 60年以上前からあるこの地方独特の麺料理で、近年ではB級グルメとして全国的に認知されるようになりました。 またローメンの形態は2種類あり、しょうゆベースのスープに麺と野菜を入れて煮込んだスープタイプと、麺と具を炒めてつくるやきそば風とに分かれます。 ローメンはお店で出されてくるものなど、そのままでは味付けされておらず薄いので、酢、醤油、ソース、ごま油、七味、ニンニクなどの調味料を自分でアレンジしてかけて味を完成させることが一般的です。 このローメンの発祥のお店が、天龍川沿いの「萬里」です。 ラム肉とにんにくがスタミナたっぷりで、元気をもらえます。',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
+            'prefecture_id'=>20
         ]);
         DB::table('gotouti_mens')->insert([
             'name' => ' 新潟あっさり醤油ラーメン',
@@ -370,43 +391,45 @@ class Gotouti_menSeeder extends Seeder
             昔と変わらない味を守り続け、誰もが好む懐かしい味わいが人気の秘訣。新潟市民のソウルフードともいわれます。',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
+            'prefecture_id'=>15
         ]);DB::table('gotouti_mens')->insert([
             'name' => '新潟濃厚味噌ラーメン ',
             'origin'=>'濃厚な味噌スープを、割りスープで自分好みに薄めながら食べられるラーメン。味噌ダレは新潟県産をメインにブレンドするのが主流だ。',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
+            'prefecture_id'=>15
         ]);
         DB::table('gotouti_mens')->insert([
             'name' => '三条カレーラーメン ',
             'origin'=>'80年前からあるというご当地グルメ。ルールはカレーを合わせることのみ。その自由度からバラエティに富んだメニュー展開も魅力だ。',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
+            'prefecture_id'=>15
         ]);
         DB::table('gotouti_mens')->insert([
             'name' => ' 長岡醤油ラーメン',
             'origin'=>'長岡系ラーメンとは、新潟県長岡市で食べることができるご当地ラーメンです。 長岡系ラーメンの特徴は、スープにはっきりと生姜の味と香りを感じるところです。 生姜が入っているというのを予め考慮しておかないと、初めて食べた際には違和感があって美味しいと感じないかもしれません。 特徴的ですが、慣れるととても美味しいです。 スープに生姜を入れ始めたきっかけは、スープのベースとなっている豚ガラの臭みを消すためでしたが、長岡市が非常に寒い地域ということもあり、臭み消しの用途というより体を温める効果があると宣伝したところ流行ったようです。 燕三条ラーメンと新潟あっさりラーメン、新潟濃厚味噌ラーメンと長岡系ラーメンを合わせて新潟四大ラーメンとメディアでも広く取り扱われています。',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
+            'prefecture_id'=>15
         ]);
         DB::table('gotouti_mens')->insert([
-            'name' => '燕三条 ',
+            'name' => '燕三条背油煮干しラーメン ',
             'origin'=>'燕三条ラーメンとは、新潟県の燕市と三条市で食べることができるご当地ラーメンです。 寒い地域で漁業が盛んなところだと、提供に時間をかけないようにすぐに茹で上がる細い麺が使われていることが多いですが、燕三条ラーメンは極太麺が使われています。 これは出前に対応するために、茹で上がってから運ぶ間に麺が伸びないように考慮してあるからで、その文化が現在も変わらずに伝わってきたようです。 スープは濃口醤油味で、仕上げに豚の背油をこれでもかと載せます。 背油で、スープの湯気が上がらなくなるお店も中にはあります。 あっさり系のラーメンを欲している人には、まず食べられないこってりラーメンです。 背油好きにはたまらないラーメンですので、是非食べてみてください。',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
+            'prefecture_id'=>15
         ]);
         DB::table('gotouti_mens')->insert([
             'name' => '富山ブラック ',
             'origin'=>'ご当地ラーメンブームの中で、ひときわ全国的にメジャーになったのが富山県発祥の富山ブラックです。
-
-そのスタートは意外に古く、1955年戦後復興のために働く人たちの塩分補給、エネルギー源として炭水化物である麺、そして特に醤油を濃くしたスープが好まれたことから人気となりました。
-
-もともとネーミングはついていませんでしたが、その驚くほどのスープの黒さからネット上で「富山ブラック」と命名され、全国的ヒットにつながりました。
-
-「大喜」という屋台が元祖とされていてそのお店は閉店しましたが、その味を継承した「西町大喜」でやはり富山ブラックを試すことが可能です。
-
-なによりスープの濃さと、それに負けない深いコクを味わうことができます。',
+            そのスタートは意外に古く、1955年戦後復興のために働く人たちの塩分補給、エネルギー源として炭水化物である麺、そして特に醤油を濃くしたスープが好まれたことから人気となりました。
+            もともとネーミングはついていませんでしたが、その驚くほどのスープの黒さからネット上で「富山ブラック」と命名され、全国的ヒットにつながりました。
+            「大喜」という屋台が元祖とされていてそのお店は閉店しましたが、その味を継承した「西町大喜」でやはり富山ブラックを試すことが可能です。
+            なによりスープの濃さと、それに負けない深いコクを味わうことができます。',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
+            'prefecture_id'=>16
         ]);
         DB::table('gotouti_mens')->insert([
             'name' => ' 敦賀ラーメン',
@@ -418,6 +441,7 @@ class Gotouti_menSeeder extends Seeder
             寒い地方ならではの、冷えた体を温めてくれる素朴なラーメンです。',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
+            'prefecture_id'=>18
         ]);
         DB::table('gotouti_mens')->insert([
             'name' => '台湾ラーメン ',
@@ -430,6 +454,7 @@ class Gotouti_menSeeder extends Seeder
             、スタミナがつきそうな逸品です。 本当に辛いので、自信がない方は辛さをマイルドにしてメニューを変更することも可能です。',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
+            'prefecture_id'=>23
         ]);
         DB::table('gotouti_mens')->insert([
             'name' => '高山ラーメン ',
@@ -441,6 +466,7 @@ class Gotouti_menSeeder extends Seeder
             試食ができるドライブインのラーメンと変わった場所ですが、敷地内に製麺工場があることからでき立てを食べられると好評です。',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
+            'prefecture_id'=>21
         ]);DB::table('gotouti_mens')->insert([
             'name' => '藤枝朝ラーメン ',
             'origin'=>'もはや、日本人の食文化といっても良いのがラーメンです。 そのラーメンを朝から食べる文化が、静岡県藤枝市にあります。 
@@ -451,6 +477,7 @@ class Gotouti_menSeeder extends Seeder
             朝ラーメンは温かいもの、それから冷たいものを食べるとされていて、こちらは両方注文が可能となっています。',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
+            'prefecture_id'=>22
         ]);
         DB::table('gotouti_mens')->insert([
             'name' => '高井田ラーメン',
@@ -463,6 +490,7 @@ class Gotouti_menSeeder extends Seeder
             、一度ラーメンの食べ歩きをしてみると良いでしょう。',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
+            'prefecture_id'=>27
         ]);
         DB::table('gotouti_mens')->insert([
             'name' => '揚州ラーメン ',
@@ -475,6 +503,7 @@ class Gotouti_menSeeder extends Seeder
             また麺は細いちぢれ麺が多く、チャーシュー、モヤシ、ネギ、板海苔など様々な具が入っているのが特徴です。',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
+            'prefecture_id'=>28
         ]);DB::table('gotouti_mens')->insert([
             'name' => '京都ラーメン ',
             'origin'=>'京都ラーメンは、京都府京都市を中心に提供されているラーメンをいいます。 
@@ -486,6 +515,7 @@ class Gotouti_menSeeder extends Seeder
             またこってり系には2種類のタイプがあり、鶏ガラ出汁スープに豚の背脂を入れたタイプと、鶏がらをドロドロに煮込んだ白湯スープがあります。',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
+            'prefecture_id'=>26
         ]);
         DB::table('gotouti_mens')->insert([
             'name' => '近江ちゃんぽん ',
@@ -498,6 +528,7 @@ class Gotouti_menSeeder extends Seeder
             スープは昆布のまろやかな旨味と甘味が広がり、酢を入れることであっさりとした酸味も味わえます。',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
+            'prefecture_id'=>25
         ]);
         DB::table('gotouti_mens')->insert([
             'name' => '天理ラーメン ',
@@ -510,6 +541,7 @@ class Gotouti_menSeeder extends Seeder
             天理ラーメンは白菜の量がとても多いのが特徴であり、ラーメンを全部食べた後に白菜を食べることも多くあります。',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
+            'prefecture_id'=>29
         ]);DB::table('gotouti_mens')->insert([
             'name' => ' 和歌山ラーメン',
             'origin'=>'和歌山ラーメンは、主として和歌山県北部地域で親しまれており、専門店、大衆食堂などで出されているご当地ラーメンとして人気があります。
@@ -520,6 +552,7 @@ class Gotouti_menSeeder extends Seeder
             なお中華そばのスープは、醤油の旨味や豚骨のコクが調和したさっぱり感が特徴です。',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
+            'prefecture_id'=>30
         ]);DB::table('gotouti_mens')->insert([
             'name' => ' 亀山ラーメン',
             'origin'=>'三重県の亀山ラーメンは、2013年に生まれた比較的新しいラーメンです。
@@ -531,6 +564,7 @@ class Gotouti_menSeeder extends Seeder
             味噌ラーメンとしてはトップクラスという評価もあるほどです。',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
+            'prefecture_id'=>24
         ]);DB::table('gotouti_mens')->insert([
             'name' => ' 笠岡ラーメン',
             'origin'=>'岡山の笠岡ラーメンは、岡山県笠岡市で提供されているご当地ラーメンとして知られています。 
@@ -542,6 +576,7 @@ class Gotouti_menSeeder extends Seeder
             笠岡ラーメンの麺は全体的に中太ですが、細い麺を使うところもあります。',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
+            'prefecture_id'=>33
         ]);DB::table('gotouti_mens')->insert([
             'name' => ' 尾道ラーメン',
             'origin'=>'広島県尾道市を中心に提供されているのが尾道ラーメンであり、備後地方のご当地ラーメンとして人気を得ています。
@@ -552,6 +587,7 @@ class Gotouti_menSeeder extends Seeder
             少し大きめの豚の背脂ミンチが美味しさを引き立てます。 尾道ラーメンの老舗店の中には、「中華そば」として営業しているところが多いです。',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
+            'prefecture_id'=>34
         ]);DB::table('gotouti_mens')->insert([
             'name' => '広島ラーメン ',
             'origin'=>'広島ラーメンは、広島市を中心とした広島県西部で提供しているご当地ラーメンとして親しまれています。 
@@ -562,6 +598,7 @@ class Gotouti_menSeeder extends Seeder
             広島ラーメンは、全体的にあっさり、さっぱりした昔ながらの風味が魅力的です。',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
+            'prefecture_id'=>34
         ]);DB::table('gotouti_mens')->insert([
             'name' => '鳥取牛骨ラーメン ',
             'origin'=>'鳥取牛骨ラーメンは、出汁を牛骨でとる鳥取県のラーメンです。 地元にはラーメン店が多く、
@@ -571,6 +608,7 @@ class Gotouti_menSeeder extends Seeder
             それぞれの店舗によってスープの取り方は異なります。 しかし全体的に見てみると、牛脂独特の甘みや香ばしさが魅力的なスープといえます。',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
+            'prefecture_id'=>31
         ]);DB::table('gotouti_mens')->insert([
             'name' => ' しじみラーメン',
             'origin'=>'島根県で提供されているしじみラーメンは、その味に特徴があります。 ラーメンの出汁を丁寧にとっていますので、
@@ -581,6 +619,7 @@ class Gotouti_menSeeder extends Seeder
             麺づくりに欠かせない奥出雲地方の天然アルカリ水を使ってこね上げたコシの強さが特徴です。 島根県のしじみラーメンには透明感があります。',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
+            'prefecture_id'=>32
         ]);
         DB::table('gotouti_mens')->insert([
             'name' => '宇部ラーメン ',
@@ -592,6 +631,7 @@ class Gotouti_menSeeder extends Seeder
             具材はネギ、チャーシュー、シナチクが基本です。 また他の地域のラーメンと比べ、値段が安いのが特徴です。',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
+            'prefecture_id'=>35
         ]);
         DB::table('gotouti_mens')->insert([
             'name' => '八幡浜ちゃんぽん ',
@@ -603,6 +643,7 @@ class Gotouti_menSeeder extends Seeder
             具材には多めの野菜、豚バラ肉、八幡浜の特産品である蒲鉾、じゃこ天などが使用されています。',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
+            'prefecture_id'=>38
         ]);DB::table('gotouti_mens')->insert([
             'name' => '讃岐ラーメン',
             'origin'=>'讃岐のラーメンは、香川県で提供されている地元のラーメンとして知られています。
@@ -615,6 +656,7 @@ class Gotouti_menSeeder extends Seeder
             讃岐のラーメンはそれぞれのお店で味は異なりますが、全体的に美味しく仕上がっています。',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
+            'prefecture_id'=>37
         ]);DB::table('gotouti_mens')->insert([
             'name' => '鍋焼きラーメン ',
             'origin'=>'鍋焼きラーメンは、高知県須崎市で生まれたラーメンです。
@@ -627,6 +669,7 @@ class Gotouti_menSeeder extends Seeder
             鍋焼きラーメンはお店だけでなく、須崎市周辺にあるスーパーなどでも家庭用の鍋焼き用生ラーメンとして販売されているくらい人気です。',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
+            'prefecture_id'=>39
         ]);DB::table('gotouti_mens')->insert([
             'name' => '徳島ラーメン ',
             'origin'=>'徳島ラーメンは、徳島県東部地域でおなじみのご当地ラーメンです。
@@ -639,6 +682,7 @@ class Gotouti_menSeeder extends Seeder
             そのどれもが美味しいラーメンとして人気があります。',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
+            'prefecture_id'=>36
         ]);DB::table('gotouti_mens')->insert([
             'name' => '博多ラーメン ',
             'origin'=>'福岡で人気のあるラーメンが博多ラーメンです。
@@ -650,6 +694,7 @@ class Gotouti_menSeeder extends Seeder
             自分好みの硬さを指定できますので、他地域からの人気も高くなっています。',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
+            'prefecture_id'=>40
         ]);DB::table('gotouti_mens')->insert([
             'name' => '長浜ラーメン ',
             'origin'=>'長浜ラーメンは、あっさりしたスープと細麺が特徴です。
@@ -662,6 +707,7 @@ class Gotouti_menSeeder extends Seeder
             麺の硬さについては、ヤワ、カタ、ナマ、カキアゲ、また脂量については、ナシ、ベタの言葉で注文します。',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
+            'prefecture_id'=>40
         ]);DB::table('gotouti_mens')->insert([
             'name' => '久留米ラーメン ',
             'origin'=>'久留米ラーメンは、福岡県久留米市を中心として提供されているラーメンをいいます。
@@ -674,6 +720,7 @@ class Gotouti_menSeeder extends Seeder
             久留米ラーメンのスープについては、博多ラーメンよりも幅が広いのも特徴です。',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
+            'prefecture_id'=>40
         ]);DB::table('gotouti_mens')->insert([
             'name' => ' 佐賀ラーメン',
             'origin'=>'九州では美味しいラーメンが多いですが、佐賀ラーメンもその中の一つです。
@@ -685,6 +732,7 @@ class Gotouti_menSeeder extends Seeder
             このように佐賀ラーメンは九州の他のラーメンと同様、美味しいラーメンとして人気があります。',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
+            'prefecture_id'=>41
         ]);
         DB::table('gotouti_mens')->insert([
             'name' => '長崎ちゃんぽん ',
@@ -698,6 +746,7 @@ class Gotouti_menSeeder extends Seeder
             ちゃんぽんは豊富な具が特徴ですが、実際に使われる具材は地域やお店によって様々です。 まずはメニューを確認してみると良いでしょう。',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
+            'prefecture_id'=>42
         ]);
         DB::table('gotouti_mens')->insert([
             'name' => '玉名ラーメン',
@@ -710,6 +759,7 @@ class Gotouti_menSeeder extends Seeder
             またお店によっては、お客さんの好みでスタッフが直接振りかけるところもあるようです。',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
+            'prefecture_id'=>43
         ]);
         DB::table('gotouti_mens')->insert([
             'name' => '熊本ラーメン',
@@ -722,6 +772,7 @@ class Gotouti_menSeeder extends Seeder
             他のラーメン店と比べて、スープの種類が多いのが特徴です。 また熊本ラーメンは、スープを当日に使い切ることでも知られています。',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
+            'prefecture_id'=>43
         ]);
         DB::table('gotouti_mens')->insert([
             'name' => '宮崎ラーメン',
@@ -735,6 +786,7 @@ class Gotouti_menSeeder extends Seeder
             また宮崎のラーメン店では、ラーメンと一緒にたくあんが提供されるのが特徴です。 まずは一度食してみることをオススメします。',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
+            'prefecture_id'=>45
         ]);
         DB::table('gotouti_mens')->insert([
             'name' => '鹿児島ラーメン',
@@ -746,6 +798,7 @@ class Gotouti_menSeeder extends Seeder
             鹿児島ラーメンを提供しているお店の中には、ラーメンと一緒に漬物や緑茶を提供するところも多いです。',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
+            'prefecture_id'=>46
         ]);
         DB::table('gotouti_mens')->insert([
             'name' => '沖縄そば',
@@ -756,6 +809,7 @@ class Gotouti_menSeeder extends Seeder
             また麺については、かん水や薪を燃やして作った灰汁が含まれています。 沖縄のそばは中華麺と同じ方法で作られていることから、中華麺に分類されます。 麺自体は太く、和風だしを使用していることから、ラーメンよりもむしろ肉の食感に似ています。 沖縄そばはトッピングする具も多く、それぞれのお店でメニューは異なります。',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
+            'prefecture_id'=>47
         ]);
     }
 }

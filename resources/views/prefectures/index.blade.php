@@ -11,7 +11,9 @@
         <div class='prefectures'>
             @foreach ($prefectures as $prefecture)
                 <div class='prefecture'>
-                    <a href="/prefectures/{{ $prefecture->id }}">{{ $prefecture->name }}</a>
+                    <a href="/prefectures/{{ $prefecture->id }}">
+                        {{ $prefecture->name }}
+                    </a>
                 </div>
             @endforeach
         </div>

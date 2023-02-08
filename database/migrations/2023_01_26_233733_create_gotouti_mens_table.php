@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string("name");
             $table->text("origin");
+            $table->foreignId('prefecture_id')->constrained();
             $table->timestamps();
         });
     }

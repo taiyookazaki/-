@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Gotouti_men extends Model
 {
     use HasFactory;
+    public function prefecture()
+    {
+        return $this->belongsTo(Prefecture::class);
+    }
+    
 }

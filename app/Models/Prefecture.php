@@ -9,7 +9,11 @@ class Prefecture extends Model
 {
     use HasFactory;
     public function getByLimit(int $limit_count = 47)
-{
-    return $this->orderBy('id', 'ASC')->limit($limit_count)->get();
-}
+    {
+        return $this->orderBy('id', 'ASC')->limit($limit_count)->get();
+    }
+    public function gotouti_mens()   
+    {
+        return $this->hasMany(Gotouti_men::class);  
+    }
 }
