@@ -13,4 +13,8 @@ class Gotouti_men extends Model
         return $this->belongsTo(Prefecture::class);
     }
     
+    public function likedUsers()
+    {
+        return $this->belongsToMany(User::class, "likes", "gotouti_men_id", "user_id");
+    }
 }

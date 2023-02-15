@@ -1,3 +1,4 @@
+<x-app-layout>
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
@@ -9,8 +10,9 @@
     <body>
         <h1>Gotouti_map</h1>
         <div class='prefectures'>
+            <p>{{ Auth::user()->name }}</p>
             @foreach ($prefectures as $prefecture)
-                <div class='prefecture'>
+                <div  class="prefecture{{$prefecture->id}} ">
                     <a href="/prefectures/{{ $prefecture->id }}">
                         {{ $prefecture->name }}
                     </a>
@@ -19,3 +21,4 @@
         </div>
     </body>
 </html>
+</x-app-layout>

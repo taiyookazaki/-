@@ -1,3 +1,4 @@
+<x-app-layout>
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
@@ -10,6 +11,8 @@
         <h1 class='name'>
             {{ $prefecture->name }}
         </h1>
+        <p>
+        </p>
         <div class='gotouti_mens'>
                 <div class='gotouti_men'>
                     @foreach($gotouti_men as $gotouti_mens )
@@ -24,3 +27,4 @@
         </div>
     </body>
 </html>
+</x-app-layout>

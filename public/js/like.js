@@ -1,9 +1,11 @@
-function unlike(postId) {
-  $.ajax({
+var xhr = new XMLHttpRequest();
+
+function like(gotouti_men) {
+ ajax({
     headers: {
-      "X-CSRF-TOKEN": $('meta[name="csrf-token"]').attr("content"),
+      "X-CSRF-TOKEN": ('meta[name="csrf-token"]').attr("content"),
     },
-    url: `/unlike/${postId}`,
+    url: `/like/${gotouti_men}`,
     type: "POST",
   })
     .done(function (data, status, xhr) {
@@ -13,3 +15,4 @@ function unlike(postId) {
       console.log();
     });
 }
+

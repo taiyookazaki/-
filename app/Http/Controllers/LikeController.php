@@ -8,16 +8,10 @@ use Auth;
 
 class LikeController extends Controller
 {
-    public function store($postId)
+    public function like(Request $request, Gotouti_men $gotouti_men)
     {
-        Auth::user()->like($postId);
-        return 'ok!'; //レスポンス内容
-    }
-
-    public function destroy($postId)
-    {
-        Auth::user()->unlilikeke($postId);
-        return 'ok!'; //レスポンス内容
+        $gotouti_men->likedUsers()->attach(auth()->user());
+        return redirect(route("gotouti_men.index"));
     }
 }
 

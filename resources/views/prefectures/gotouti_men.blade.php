@@ -1,3 +1,4 @@
+<x-app-layout>
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
@@ -15,14 +16,27 @@
                     <p>
                         {{ $gotouti_men->name }}
                     </p>
-                    <p >
+                    <p>
                         {{ $gotouti_men->origin }}
                     </p>
                 </div>
         </div>
-        <script src="/gotouti_map/like.js"></script>
-        <script src="/gotouti_map/likecancel.js"></script>
-        <button onclick="like({{$gotouti_men->id}})">いいね</button>
-        <button onclick="unlike({{$gotouti_men->id}})">いいね解除</button>
+        <script src="{{asset('/js/like.js')}}"></script>
+            @if ($liked_gotouti_men_lists->contains($gotouti_men->id))
+                        <div class="flex">
+                            <form action={{"/unlike/" . $gotouti_men->id}} method="POST" class="border-red-500">
+                                @csrf
+                                <button type="submit">いいね解除</button>
+                            </form>
+                        </div>
+                    @else
+                        <div class="flex">
+                            <form action={{"/like/" . $gotouti_men->id}} method="POST" class="border-red-500">
+                                @csrf
+                                <button type="submit">いいね</button>
+                            </form>
+                        </div>
+                    @endif
     </body>
 </html>
+</x-app-layout>

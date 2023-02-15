@@ -13,8 +13,10 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('evaluations', function (Blueprint $table) {
-            $table->id();
+        Schema::create('likes', function (Blueprint $table) {
+            $table->primary(["user_id", "gotouti_men_id"]);
+            $table->bigInteger('gotouti_men_id')->constrained("gotouti_mens");;
+            $table->bigInteger('user_id')->constrained("users");;
             $table->timestamps();
         });
     }
@@ -26,6 +28,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('evaluations');
+        Schema::dropIfExists('likes');
     }
 };
